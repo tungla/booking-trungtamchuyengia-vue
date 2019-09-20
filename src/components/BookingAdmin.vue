@@ -52,7 +52,7 @@
 		</div>
 		<div class="row">
 			<div class="col-12">
-				<button class="btn btn-warning" id="btn_back_to_home">Quay lại trang chủ</button>
+				<button class="btn btn-warning" id="btn_back_to_home" v-on:click="backToHome">Quay lại trang chủ</button>
 			</div>
 		</div>
 	</div>
@@ -147,6 +147,9 @@ export default {
   		{
   			this.bookedList = response.data;				
   		})
+  	},
+  	backToHome() {
+  		bookingApi.backToHome();
   	}
   },
   mounted() {
