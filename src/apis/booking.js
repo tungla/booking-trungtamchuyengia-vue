@@ -25,5 +25,11 @@ export default {
   },
   deleteBookedTime (id) {
   	return HTTP.delete('api/booked/' + id)
+  },
+  navigateToBookedPage(phoneNumber) {
+	window.location.href = domain + 'booked/' + phoneNumber;
+  },
+  navigateToBookingSecondStepPage(phoneNumber) {
+  	window.location.href = domain + 'booking/' + phoneNumber;
   }
 }

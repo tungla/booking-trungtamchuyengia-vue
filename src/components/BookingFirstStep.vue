@@ -69,6 +69,8 @@ form > button {
 </style>
 
 <script>
+import bookingApi from '../apis/booking.js'
+
 export default {
   name: 'BookingFirstStep',
   data: function() {
@@ -81,12 +83,10 @@ export default {
   },
   methods: {
   	navigateToBookingSecondStepPage() {
-  		var currentUrl = window.location.href;
-  		window.location.href = currentUrl + 'booking/' + this.phoneNumber;
+  		bookingApi.navigateToBookingSecondStepPage(this.phoneNumber);
   	},
   	navigateToBookedPage() {
-  		var currentUrl = window.location.href;
-  		window.location.href = currentUrl + 'booked/' + this.phoneNumber;
+  		bookingApi.navigateToBookedPage(this.phoneNumber);
   	}
   },
   mounted() {

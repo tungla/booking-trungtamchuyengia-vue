@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const HTTP = axios.create({
-  baseURL: 'http://127.0.0.1:8001/',
+  baseURL: 'http://139.180.215.40:8001/',
   headers: { 
     // 'Authorization': 'Bearer ' + localStorage.getItem('token')
   }
@@ -22,4 +22,4 @@ HTTP.interceptors.response.use(response => {
 })
 
 export default HTTP
-export const domain = 'http://127.0.0.1:8080/'
+export const domain = 'http://139.180.215.40:8080/'
