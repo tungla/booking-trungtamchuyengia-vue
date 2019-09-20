@@ -1,12 +1,12 @@
 <template>
 	<div class=".container-fluid" id="first_step">
 		<div class="col-6" id="phone_number_form">
-			<form v-on:submit.prevent="navigateToBookingSecondStepPage">
+			<form v-on:submit.prevent="">
 			    <div class="form-group">
 			        <input type="phone" class="form-control" id="input_phone_number" placeholder="* Nhập Số Điện Thoại" v-model="phoneNumber">
 			    </div>
-			    <button id="go_next_step" type="submit" class="btn btn-primary">Đặt lịch giữ chỗ</button>
-			    <button id="check_booked" type="submit" class="btn btn-primary">Xem lại đặt chỗ</button>
+			    <button id="go_next_step" type="submit" class="btn btn-primary" v-on:click="navigateToBookingSecondStepPage">Đặt lịch giữ chỗ</button>
+			    <button id="check_booked" type="submit" class="btn btn-primary" v-on:click="navigateToBookedPage">Xem lại đặt chỗ</button>
 			</form>
 		</div>
 	</div>
@@ -81,8 +81,12 @@ export default {
   },
   methods: {
   	navigateToBookingSecondStepPage() {
-  		this.currentUrl = window.location.href;
-  		window.location.href = this.currentUrl + 'booking/' + this.phoneNumber;
+  		var currentUrl = window.location.href;
+  		window.location.href = currentUrl + 'booking/' + this.phoneNumber;
+  	},
+  	navigateToBookedPage() {
+  		var currentUrl = window.location.href;
+  		window.location.href = currentUrl + 'booked/' + this.phoneNumber;
   	}
   },
   mounted() {
