@@ -4,7 +4,7 @@
 			<div class="col-3">
 			</div>
 			<div class="col-8" id="datepicker">
-				<datepicker v-model="searchingDate"></datepicker>
+				<datepicker v-model="searchingDate" placeholder="Chọn ngày để tìm ..."></datepicker>
 				<button class="btn-sm btn-primary" v-on:click="searchBookingByDate">Tìm</button>
 			</div>
 		</div>
