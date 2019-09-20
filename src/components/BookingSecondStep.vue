@@ -1,96 +1,96 @@
 <template>
 	<div class=".container-fluid" id="second_step">
 		<div class="row" id="booking_header_row">
-			<div class="col-6" id="booking_header">
+			<div class="col-9" id="booking_header">
 				<p>Chọn ngày/giờ khám</p>
 			</div>
 		</div>
 		<div class="row" id="booking_date_row">
-			<button class="col-2 btn" id="booking_date_today" v-on:click="clickedToday" v-bind:style= "btnTodayClicked ? 'background-color: yellow; color: black;' : 'background-color: grey; color:white'">
+			<button class="col-3 btn" id="booking_date_today" v-on:click="clickedToday" v-bind:style= "btnTodayClicked ? 'background-color: yellow; color: black;' : 'background-color: grey; color:white'">
 				<p>Hôm nay</p>
 			</button>
-			<button class="col-2 btn" id="booking_date_tomorrow" v-on:click="clickedTomorrow" v-bind:style= "btnTomorrowClicked ? 'background-color: yellow; color: black;' : 'background-color: grey; color:white'">
+			<button class="col-3 btn" id="booking_date_tomorrow" v-on:click="clickedTomorrow" v-bind:style= "btnTomorrowClicked ? 'background-color: yellow; color: black;' : 'background-color: grey; color:white'">
 				<p>Ngày mai</p>
 			</button>
-			<button class="col-2 btn" id="booking_date_ngaykia" v-on:click="clickedNgayKia" v-bind:style= "btnNgayKiaClicked ? 'background-color: yellow; color: black;' : 'background-color: grey; color:white'">
+			<button class="col-3 btn" id="booking_date_ngaykia" v-on:click="clickedNgayKia" v-bind:style= "btnNgayKiaClicked ? 'background-color: yellow; color: black;' : 'background-color: grey; color:white'">
 				<p>Ngày kia</p>
 			</button>
 		</div>
 		<div class="row" id="hour_row_1">
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('8:00')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('8:00')">
 				<p>8:00</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('8:30')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('8:30')">
 				<p>8:30</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('9:00')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('9:00')">
 				<p>9:00</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('9:30')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('9:30')">
 				<p>9:30</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('10:00')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('10:00')">
 				<p>10:00</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('10:30')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('10:30')">
 				<p>10:30</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('11:00')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('11:00')">
 				<p>11:00</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('11:30')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('11:30')">
 				<p>11:30</p>
 			</button>
-		</div>
-		<div class="row" id="hour_row_1">
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('12:00')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('12:00')">
 				<p>12:00</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('12:30')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('12:30')">
 				<p>12:30</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('13:00')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('13:00')">
 				<p>13:00</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('13:30')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('13:30')">
 				<p>13:30</p>
-			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('14:00')">
-				<p>14:00</p>
-			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('14:30')">
-				<p>14:30</p>
-			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('15:00')">
-				<p>15:00</p>
-			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('15:30')">
-				<p>15:30</p>
 			</button>
 		</div>
 		<div class="row" id="hour_row_1">
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('16:00')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('14:00')">
+				<p>14:00</p>
+			</button>
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('14:30')">
+				<p>14:30</p>
+			</button>
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('15:00')">
+				<p>15:00</p>
+			</button>
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('15:30')">
+				<p>15:30</p>
+			</button>
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('16:00')">
 				<p>16:00</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('16:30')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('16:30')">
 				<p>16:30</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('17:00')">
+		</div>
+		<div class="row" id="hour_row_1">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('17:00')">
 				<p>17:00</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('17:30')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('17:30')">
 				<p>17:30</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('18:00')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('18:00')">
 				<p>18:00</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('18:30')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('18:30')">
 				<p>18:30</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('19:00')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('19:00')">
 				<p>19:00</p>
 			</button>
-			<button class="col-1 btn" id="hour" v-on:click="clickedHour('19:30')">
+			<button class="col-2 btn" id="hour" v-on:click="clickedHour('19:30')">
 				<p>19:30</p>
 			</button>
 		</div>
@@ -169,17 +169,17 @@
 
 #booking_header_row {
 	margin-top: 10%;
-	margin-left: 24.5%;
+	margin-left: 15%;
 	width: 100%;
 }
 
 #booking_date_row {
-	margin-left: 24.5%;
+	margin-left: 15%;
 	width: 100%;
 }
 
 #hour_row_1 {
-	margin-left: 24.5%;
+	margin-left: 15%;
 	width: 75%;
 }
 

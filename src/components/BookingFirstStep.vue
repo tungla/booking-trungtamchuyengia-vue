@@ -55,14 +55,14 @@ form > button {
 	margin-right : 2%;
 	background-color: black;
 	font-color: white;
-	font-size: 25px;
+	font-size: 1.5vw;
 	font-weight: bold;
 	width: 68%;
 }
 
 #check_booked {
 	background-color: grey;
-	font-size: 24px;
+	font-size: 1.5vw;
 	font-weight: bold;
 	width: 30%;
 }
