@@ -130,8 +130,8 @@ export default {
   	deleteBookedTime(bookedItem) {
   		bookingApi.deleteBookedTime(bookedItem.id).then((response) => {
 			alert('Đã huỷ đặt lịch của bạn thành công');
-			if (searchingDate != '') {
-				bookingApi.getBookedTimeByDate(searchingDate).then((response) =>
+			if (this.searchingDate != '') {
+				bookingApi.getBookedTimeByDate(this.searchingDate).then((response) =>
 		  		{
 		  			this.bookedList = response.data;				
 		  		})
