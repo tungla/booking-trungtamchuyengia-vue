@@ -42,7 +42,7 @@
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-secondary btn-warning" data-dismiss="modal">Không</button>
-				        <button type="button" class="btn btn-primary" v-on:click="deleteBookedTime(bookedItem)">Có</button>
+				        <button type="button" class="btn btn-primary" v-on:click="deleteBookedTime(bookedItem)" data-toggle="modal" data-target="#confirm_delete_modal">Có</button>
 				      </div>
 				    </div>
 				  </div>
@@ -130,12 +130,8 @@ export default {
   	deleteBookedTime(bookedItem) {
   		bookingApi.deleteBookedTime(bookedItem.id).then((response) => {
 			alert('Đã huỷ đặt lịch của bạn thành công');
-			window.location.reload();
 			if (this.searchingDate != '') {
-				bookingApi.getBookedTimeByDate(this.searchingDate).then((response) =>
-		  		{
-		  			this.bookedList = response.data;				
-		  		})
+				this.searchBookingByDate(this.searchingDate);
 			}
 		})
   	},
